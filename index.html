@@ -4,7 +4,7 @@
 <html>
 <head>
 <title>Ray Tracer</title>
-<script type="text/javascript" id="includedscript" src="project6.js"></script>
+<script type="text/javascript" id="includedscript" src="RayTracer.js"></script>
 
 <script type="text/javascript">
 document.addEventListener("keydown", keyDownTextField, false);
@@ -14,7 +14,7 @@ function keyDownTextField(e) {
 		document.getElementById('includedscript').remove();
 		var head = document.getElementsByTagName('head')[0];
 		var script = document.createElement('script');
-		script.src= 'project6.js';
+		script.src= 'RayTracer.js';
 		script.id = 'includedscript';
 		script.onload = function() {
 			primaryRT.init();
